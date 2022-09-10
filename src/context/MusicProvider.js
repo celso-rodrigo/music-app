@@ -4,9 +4,13 @@ import PropTypes from "prop-types";
 
 function MusicProvider({ children }) {
   const [showPlayer] = useState(false);
+  const [currTrackUrl] = useState("");
+  const [currTrackName] = useState("");
   
   const providerValue = {
     showPlayer,
+    currTrackUrl,
+    currTrackName,
   };
 
   return <Context.Provider value={providerValue}>{children}</Context.Provider>;

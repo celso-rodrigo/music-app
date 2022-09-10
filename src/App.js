@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login.js";
 import MainPage from "./pages/MainPage.js";
-import MusicDetails from "./pages/MusicDetails.js";
+import MusicsPage from "./pages/MusicsPage.js";
 import Favorites from "./pages/Favorites.js";
 import NotFound from "./pages/NotFound.js";
 import Context from "./context/Context.js";
 import MusicPlayer from "./Components/MusicPlayer.js";
+import "./Styles/global.css";
 
 function App() {
   const {showPlayer} = useContext(Context);
@@ -14,12 +15,12 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Login />} />
-        <Route exact path="/musics" element={<MainPage />} />
-        <Route exact path="/musics-detail/:musicId" element={<MusicDetails />} />
+        <Route exact path="/albuns" element={<MainPage />} />
+        <Route exact path="/musics/:album" element={<MusicsPage />} />
         <Route exact path="/favorites" element={<Favorites />} />
         <Route exact path="*" element={<NotFound />} />
       </Routes>
-      {!showPlayer && <MusicPlayer />}
+      {showPlayer && <MusicPlayer />}
     </>
   );
 }
