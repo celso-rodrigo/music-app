@@ -1,4 +1,5 @@
 import React from "react";
+import "../Styles/MainPage.css";
 
 function MainPage() {
   // const searchAlbumsAPI = async () => { 
@@ -9,7 +10,7 @@ function MainPage() {
   
   return(
     // <button onClick={searchAlbumsAPI}>Test API</button>
-    <div>Main Page</div>
+    <div className="main-page">Main Page</div>
   );
 }
 

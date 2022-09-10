@@ -1,0 +1,58 @@
+.nav-bar {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  padding: 0 2vw 0 0;
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid gray;
+}
+
+.nav-bar a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  height: 100%;
+  width: 65px;
+}
+
+.nav-bar a img {
+  height: 60%;
+}
+
+.search-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.search-label button {
+  height: 75%;
+  width: 25%;
+  position: absolute;
+  right: 0;
+}
+
+.search-label button img {
+  height: 55%;
+}
+
+.search-bar {
+  width: 200px;
+  height: 75%;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+.navigation-btns {
+  display: flex;
+}
+
+.navigation-btns .active {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

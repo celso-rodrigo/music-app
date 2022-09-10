@@ -3,12 +3,12 @@ import Context from "./Context";
 import PropTypes from "prop-types";
 
 function MusicProvider({ children }) {
-  const [showPlayer] = useState(false);
+  const [showUI] = useState(false);
   const [currTrackUrl] = useState("");
   const [currTrackName] = useState("");
   
   const providerValue = {
-    showPlayer,
+    showUI,
     currTrackUrl,
     currTrackName,
   };

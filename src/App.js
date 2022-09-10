@@ -8,11 +8,13 @@ import NotFound from "./pages/NotFound.js";
 import Context from "./context/Context.js";
 import MusicPlayer from "./Components/MusicPlayer.js";
 import "./Styles/global.css";
+import NavBar from "./Components/NavBar.js";
 
 function App() {
-  const {showPlayer} = useContext(Context);
+  const {showUI} = useContext(Context);
   return (
     <>
+      {showUI && <NavBar />}
       <Routes>
         <Route exact path="/" element={<Login />} />
         <Route exact path="/albuns" element={<MainPage />} />
@@ -20,7 +22,7 @@ function App() {
         <Route exact path="/favorites" element={<Favorites />} />
         <Route exact path="*" element={<NotFound />} />
       </Routes>
-      {showPlayer && <MusicPlayer />}
+      {showUI && <MusicPlayer />}
     </>
   );
 }
