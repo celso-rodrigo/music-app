@@ -3,7 +3,7 @@ import Context from "./Context";
 import PropTypes from "prop-types";
 
 function MusicProvider({ children }) {
-  const [showUI] = useState(false);
+  const [showUI] = useState(true);
   const [currTrackUrl] = useState("");
   const [currTrackName] = useState("");
   

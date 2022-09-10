@@ -1,8 +1,9 @@
 import React from "react";
+import "../Styles/MusicsPage.css";
 
 function MusicsPage() {
   return(
-    <div>Music Page</div>
+    <div className="musics-page">Music Page</div>
   );
 }
 

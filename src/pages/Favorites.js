@@ -1,8 +1,9 @@
 import React from "react";
+import "../Styles/Favorites.css";
 
 function Favorites() {
   return(
-    <div>FAVORITES</div>
+    <div className="favorites-page">FAVORITES</div>
   );
 }
 
