@@ -1,21 +1,22 @@
 .audio-player {
+  background-color: white;
   position: absolute;
   bottom: 0;
   display: flex;
-	justify-content: space-around;
-	padding: 10px 0;
+  justify-content: space-around;
+  padding: 10px 0;
   width: 100%;
-	border-top: 1px solid gray;
+  border-top: 1px solid gray;
 }
 
 .audio-player .track-name {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 40%;
-	font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  font-size: 1.5rem;
 }
 
 audio {
-	width: 40%;
+  width: 40%;
 }

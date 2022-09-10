@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-page .search-text {
+  align-self: center;
+  padding-top: 50px;
+  font-size: 3rem;
+}
+
+.loading {
+  animation: loading 0.9s both infinite;
+  border: 10px solid lightgray;
+  border-radius: 100%;
+  border-top-color: black;
+  height: 75px;
+  margin: auto;
+  transition: 1s;
+  width: 75px;
+}
+
+@keyframes loading {
+
+  to {
+    transform: rotate(2turn);
+  }
+}

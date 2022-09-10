@@ -11,11 +11,11 @@ function NavBar() {
     <header>
       <h1>Music App</h1>
       <nav className="nav-bar">
-        <label htmlFor="search-bar-input" className="search-label">
+        <label htmlFor="search-bar-header" className="search-label">
           <input
             type="text"
-            id="search-bar-input"
-            name="search-bar-input" 
+            id="search-bar-header"
+            name="search-bar-header" 
             className="search-bar"
             placeholder="Search something..."
           />
