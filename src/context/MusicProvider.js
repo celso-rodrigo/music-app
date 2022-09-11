@@ -8,7 +8,7 @@ function MusicProvider({ children }) {
   const [showUI, setShowUI] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [loading, setLoading] = useState(true);
-  const [albumArr, setAlbumArr] = useState(true);
+  const [albumArr, setAlbumArr] = useState([]);
   const [currTrackUrl] = useState("");
   const [currTrackName] = useState("");
   

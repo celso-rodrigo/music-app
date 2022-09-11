@@ -21,6 +21,7 @@
   padding: 5px;
   border-radius: 15px;
   text-align: center;
+  padding-right: 55px;
 }
 
 .main-page .search-label button {
@@ -28,6 +29,7 @@
   right: 0;
   background-color: transparent;
   border: none;
+  border-radius: 15px;
   height: 100%;
   width: 25%;
 }

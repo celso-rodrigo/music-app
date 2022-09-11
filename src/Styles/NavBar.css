@@ -58,7 +58,7 @@ header h1 {
 .search-bar {
   width: 200px;
   height: 75%;
-  padding: 5px;
+  padding: 0 40px 0 10px;
   border: 1px solid gray;
   border-radius: 15px;
 }

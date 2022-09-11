@@ -5,14 +5,13 @@ import PropTypes from "prop-types";
 function AlbumCard({album}) {
   return(
     <div className="album-card">
-			ALBUM CARD
-      {console.log(album)}
+      {album.collectionName}
     </div>
   );
 }
 
 AlbumCard.propTypes = {
-  album: PropTypes.objectOf(PropTypes.object),
+  album: PropTypes.object.isRequired,
 };
 
 export default AlbumCard;
