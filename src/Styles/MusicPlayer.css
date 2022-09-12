@@ -9,14 +9,18 @@
   border-top: 1px solid gray;
 }
 
+.audio-player .disabled {
+  opacity: 0.5;
+}
+
 .audio-player .track-name {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 45%;
   font-size: 1.5rem;
 }
 
 audio {
-  width: 40%;
+  width: 45%;
 }

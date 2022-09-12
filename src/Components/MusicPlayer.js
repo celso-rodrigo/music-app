@@ -7,7 +7,7 @@ function MusicPlayer() {
   return(
     <footer className="audio-player">
       <p className="track-name">{currTrackUrl}</p>
-      <audio src={currTrackName} controls>
+      <audio src={currTrackName} controls className={currTrackUrl.length ? "" : "disabled"}>
         <track kind="captions" />
         O seu navegador não suporta o elemento{" "}<code>audio</code>.
       </audio>

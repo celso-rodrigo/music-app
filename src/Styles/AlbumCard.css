@@ -1,0 +1,35 @@
+.album-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.album-card .card-img {
+  border-radius: 20px 0 0 20px;
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.album-title {
+  width: 100%;
+  text-align: center;
+  text-overflow: hidden;
+  padding: 10px 0 10px 10px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.fav-btn {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+	border-left: 1px solid black;
+  width: 100px;
+}

@@ -60,13 +60,15 @@ function MainPage() {
           value={searchValue}
           onChange={({target}) => setSearchValue(target.value)}
         />
-        <button type="button" onClick={ searchAlbuns }>
+        <button type="button" onClick={ searchAlbuns } disabled={!searchValue.length}>
           <img src={search} alt="Search icon" />
         </button>
       </label>
-      {!albumArr.length 
-        ? <h1 className="search-text">{statusMessage}</h1>
-        : searchResults()}
+      <div className="album-cards-container">
+        {!albumArr.length 
+          ? <h1 className="search-text">{statusMessage}</h1>
+          : searchResults()}
+      </div>
     </div>
   );
 }
