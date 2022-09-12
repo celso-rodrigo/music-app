@@ -4,24 +4,32 @@
   border: 1px solid black;
   border-radius: 20px;
   width: 50%;
+  height: 100px;
 }
 
 .album-card .card-img {
   border-radius: 20px 0 0 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .album-info {
   display: flex;
   align-items: center;
+  height: 100%;
   width: 100%;
   text-decoration: none;
 }
 
 .album-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   width: 100%;
+  overflow: hidden;
   text-align: center;
-  text-overflow: hidden;
-  padding: 10px 0 10px 10px;
+  padding: 10px;
   font-size: 1.2rem;
   color: black;
 }
@@ -30,6 +38,6 @@
   height: 100%;
   background-color: transparent;
   border: none;
-	border-left: 1px solid black;
+  border-left: 1px solid black;
   width: 100px;
 }
